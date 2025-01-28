@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- User inputs -->
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Name" />
+
+    <EditText
+        android:id="@+id/etAge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Age"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/btnFetchLocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Location:" />
+
+    <TextView
+        android:id="@+id/tvAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Address:"
+        android:layout_marginTop="8dp"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/btnAddPerson"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Person" />
+
+    <!-- Show from Shared Prefs -->
+    <Button
+        android:id="@+id/btnShowShared"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Show from Shared Prefs" />
+
+    <!-- Show from Internal Storage -->
+    <Button
+        android:id="@+id/btnShowInternal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Show from Internal Storage" />
+
+    <!-- Show from External Storage -->
+    <Button
+        android:id="@+id/btnShowExternal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Show from External Storage" />
+
+    <!-- Display results -->
+    <TextView
+        android:id="@+id/tvResults"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Summary"
+        android:layout_marginTop="16dp"
+        android:textSize="16sp" />
+</LinearLayout>
